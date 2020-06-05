@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageProductPreviewCell" id="gTV-IL-0wX" customClass="ImageProductPreviewCell" customModule="AuthLipstick" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="185" height="197"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="185" height="197"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rwG-Lx-Bsy">
+                        <rect key="frame" x="5" y="27" width="175" height="187"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DgT-Tt-aqW" userLabel="imageThumbnail">
+                                <rect key="frame" x="0.0" y="0.0" width="175" height="187"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.BorderColor">
+                                        <color key="value" red="0.015686274510000001" green="0.3803921569" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.BorderWidth">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Yf-Ka-y2a" userLabel="Add btn">
+                                <rect key="frame" x="0.0" y="0.0" width="175" height="187"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="addIcon"/>
+                                <connections>
+                                    <action selector="addBtnClicked:" destination="gTV-IL-0wX" eventType="touchUpInside" id="EXw-UU-pJ2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DgT-Tt-aqW" firstAttribute="height" secondItem="rwG-Lx-Bsy" secondAttribute="height" id="780-WM-CzO"/>
+                            <constraint firstItem="DgT-Tt-aqW" firstAttribute="width" secondItem="rwG-Lx-Bsy" secondAttribute="width" id="C1O-bH-89G"/>
+                            <constraint firstItem="DgT-Tt-aqW" firstAttribute="centerX" secondItem="rwG-Lx-Bsy" secondAttribute="centerX" id="IGk-J7-bwk"/>
+                            <constraint firstItem="DgT-Tt-aqW" firstAttribute="centerY" secondItem="rwG-Lx-Bsy" secondAttribute="centerY" id="OEF-pn-dqB"/>
+                            <constraint firstItem="1Yf-Ka-y2a" firstAttribute="height" secondItem="rwG-Lx-Bsy" secondAttribute="height" id="QqR-2Z-zZt"/>
+                            <constraint firstItem="1Yf-Ka-y2a" firstAttribute="centerX" secondItem="rwG-Lx-Bsy" secondAttribute="centerX" id="bNT-8G-4CJ"/>
+                            <constraint firstItem="1Yf-Ka-y2a" firstAttribute="width" secondItem="rwG-Lx-Bsy" secondAttribute="width" id="cqf-wa-ZhZ"/>
+                            <constraint firstItem="1Yf-Ka-y2a" firstAttribute="centerY" secondItem="rwG-Lx-Bsy" secondAttribute="centerY" id="ggT-ub-c4c"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1uI-Yu-HMg" userLabel="Remove btn">
+                        <rect key="frame" x="153" y="44" width="32" height="32"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="aFh-5m-Xag"/>
+                            <constraint firstAttribute="width" constant="32" id="lv6-Fw-zIk"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="removeIcon"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.BorderWidth">
+                                <real key="value" value="0.20000000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.BorderColor">
+                                <color key="value" red="0.015686274510000001" green="0.3803921569" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="removeBtnClicked:" destination="gTV-IL-0wX" eventType="touchUpInside" id="lJ6-QO-n1U"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="1uI-Yu-HMg" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" id="96i-fg-Y4E"/>
+                <constraint firstItem="rwG-Lx-Bsy" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="MBm-ed-PP4"/>
+                <constraint firstItem="rwG-Lx-Bsy" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" constant="-10" id="QuT-ud-uhr"/>
+                <constraint firstItem="rwG-Lx-Bsy" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="eks-Na-E3F"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="1uI-Yu-HMg" secondAttribute="trailing" id="fc4-X0-a69"/>
+                <constraint firstItem="rwG-Lx-Bsy" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" constant="-10" id="w79-RU-T0a"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="185" height="197"/>
+            <connections>
+                <outlet property="addBtn" destination="1Yf-Ka-y2a" id="pRS-Fc-vyV"/>
+                <outlet property="imgThumb" destination="DgT-Tt-aqW" id="zIG-U0-Zmb"/>
+                <outlet property="removeBtn" destination="1uI-Yu-HMg" id="NTk-nF-sw7"/>
+            </connections>
+            <point key="canvasLocation" x="-157.24637681159422" y="108.81696428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="addIcon" width="32" height="32"/>
+        <image name="removeIcon" width="32" height="32"/>
+    </resources>
+</document>

@@ -1,0 +1,81 @@
+PODS:
+  - Alamofire (5.0.0-rc.3)
+  - AlamofireObjectMapper (6.2.0):
+    - Alamofire (= 5.0.0-rc.3)
+    - ObjectMapper (~> 3.5.1)
+  - autmsheetview (0.1.0)
+  - FSPagerView (0.8.3)
+  - IQKeyboardManager (6.5.3)
+  - ObjectMapper (3.5.1)
+  - PryntTrimmerView (4.0.0)
+  - SDWebImage (5.2.5):
+    - SDWebImage/Core (= 5.2.5)
+  - SDWebImage/Core (5.2.5)
+  - SideMenu (6.2.3)
+  - SteviaLayout (4.6.1)
+  - SVProgressHUD (2.2.5)
+  - SwiftKeychainWrapper (3.4.0)
+  - SwiftyJSON (5.0.0)
+  - YPImagePicker (4.1.2):
+    - PryntTrimmerView (~> 4.0.0)
+    - SteviaLayout (~> 4.6.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.0.0-rc.3)
+  - AlamofireObjectMapper (from `https://github.com/RomanPodymov/AlamofireObjectMapper.git`, branch `master`)
+  - autmsheetview (~> 0.1.0)
+  - FSPagerView
+  - IQKeyboardManager
+  - SDWebImage (~> 5.0)
+  - SideMenu
+  - SVProgressHUD
+  - SwiftKeychainWrapper
+  - SwiftyJSON
+  - YPImagePicker
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - ObjectMapper
+    - PryntTrimmerView
+    - SVProgressHUD
+    - SwiftKeychainWrapper
+    - SwiftyJSON
+  trunk:
+    - Alamofire
+    - autmsheetview
+    - FSPagerView
+    - IQKeyboardManager
+    - SDWebImage
+    - SideMenu
+    - SteviaLayout
+    - YPImagePicker
+
+EXTERNAL SOURCES:
+  AlamofireObjectMapper:
+    :branch: master
+    :git: https://github.com/RomanPodymov/AlamofireObjectMapper.git
+
+CHECKOUT OPTIONS:
+  AlamofireObjectMapper:
+    :commit: 94185d5681224a7a75d1d85aaafff40e5717ca48
+    :git: https://github.com/RomanPodymov/AlamofireObjectMapper.git
+
+SPEC CHECKSUMS:
+  Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
+  AlamofireObjectMapper: 2a3a10045d3ec53fd43beb1f9b92a31db0757193
+  autmsheetview: 6e9efec283cba12079beaee04f3981d73a7ca0a3
+  FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  IQKeyboardManager: c2f901164d56807a35788483584d09fa69192e8e
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  PryntTrimmerView: 67e67573ffd4c073f1308effa66aefd0cfa667a0
+  SDWebImage: 4eabf2fa6695c95c47724214417a9c036c965e4a
+  SideMenu: 7c5895ec95e805fa9a1cc38549397292a2d65ae8
+  SteviaLayout: 0c83442390c8a369c21f975ffbd812d11532645b
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftKeychainWrapper: 6fc49fbf7d4a6b0772917acb0e53a1639f6078d6
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  YPImagePicker: bdaa46782668e260fdd9709f19043a9f469fd2ad
+
+PODFILE CHECKSUM: e0f5c7b2ff1b2a2340c20c202f695fc66e491ff5
+
+COCOAPODS: 1.8.4
